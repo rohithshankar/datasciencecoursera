@@ -1,0 +1,30 @@
+---
+title: "README"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+Getting and Cleaning Data: Fit Activity
+---------------------------------------
+This project demonstrates the ability to collect, 
+work with, and clean a data set. The goal is to prepare tidy data that 
+can be used for later analysis. 
+
+
+Files
+------
+
+## run_analysis.r
+This script contains the r code that does the fitness activity analysis
+
+
+## FitActivityCodeBook.Rmd
+This is the code book  that contains the code and the explanation of what the code does
+
+
+## SummarizedActivityData.txt
+This is the file that contains the summarized mean and standard deviations by activity
