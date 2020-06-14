@@ -373,8 +373,16 @@ summary {
 activity &lt;- read.csv(&quot;.\\data\\activity.csv&quot;, sep=&quot;,&quot;, header=TRUE)</code></pre>
 <pre class="r"><code>#2. Histogram of the total number of steps taken each day
 
-library(dplyr)
-daily_steps &lt;- summarize(group_by(activity, date), total_steps=sum(steps))
+library(dplyr)</code></pre>
+<pre><code>## 
+## Attaching package: &#39;dplyr&#39;</code></pre>
+<pre><code>## The following objects are masked from &#39;package:stats&#39;:
+## 
+##     filter, lag</code></pre>
+<pre><code>## The following objects are masked from &#39;package:base&#39;:
+## 
+##     intersect, setdiff, setequal, union</code></pre>
+<pre class="r"><code>daily_steps &lt;- summarize(group_by(activity, date), total_steps=sum(steps))
 par(mfrow = c(1,1)) # Define the matrix of the plots (only 1 plot here)
 hist(daily_steps$total_steps, col=&quot;green&quot;
                             , breaks=10 
